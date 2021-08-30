@@ -1,0 +1,4 @@
+[submodule "das_vm_config"]
+	path = das-vm-config
+	url = ../das-vm-config.git
+	branch = pl94-public-release
