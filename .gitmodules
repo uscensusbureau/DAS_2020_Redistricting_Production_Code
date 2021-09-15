@@ -1,4 +1,3 @@
-[submodule "das_vm_config"]
-	path = das-vm-config
-	url = ../das-vm-config.git
-	branch = pl94-public-release
+[submodule "wiki"]
+	path = wiki
+	url = ../DAS_2020_Redistricting_Production_Code.wiki.git
