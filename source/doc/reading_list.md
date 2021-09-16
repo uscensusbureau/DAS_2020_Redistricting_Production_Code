@@ -25,3 +25,7 @@ Quick high-level DP background:
 
 * Dwork-Roth monograph, chapters 1-3 (intro to the basics of most algorithmic issues, & to the general way of thinking about privacy formally): https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf
 * Wood et al non-technical primer on DP (much easier read, less math; and a different focus, more interested in interpretation of privacy guarantee than algorithm design): https://salil.seas.harvard.edu/publications/differential-privacy-primer-non-technical-audience
+
+More on Spark:
+
+* https://legacy.gitbook.com/book/jaceklaskowski/mastering-apache-spark/details
