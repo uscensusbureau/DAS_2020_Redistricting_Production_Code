@@ -1,16 +1,21 @@
 # DAS 2020 Redistricting Production Code Release 
 
-This is the release of the US Census Bureau's Disclosure
-Avoidance System that was used to generate the TODO [2010 Demonstration Data Products released by the US Census Bureau on October 29, 2019](https://www.census.gov/programs-surveys/decennial-census/2020-census/planning-management/2020-census-data-products/2010-demonstration-data-products.html).
+This is the release of the source code and documentation for the US
+Census Bureau's Disclosure Avoidance System which is used to protect
+individual responses from the 2020 Decennial Census of Population and
+Housing. This particular release consists of the code used to generate
+the inputs used to tabulate the
+[Public Law 94-171 Redistricting Data Summary Files](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html)
+which are used, notably, for redistricting and official population
+counts.
 
-This release contains the actual code that was used to transform the 
-Census Edited File (CEF) that was used in the 2020 Census into a 
-Microdata Detail File (MDF) that was then used to create the
-demonstration DHC-P and DHC-H files that were then shared with stakeholders.
+This release contains the actual code that was used to transform the
+Census Edited File (CEF) that was used in the 2020 Census into a
+Microdata Detail File (MDF) that was then used to create the summary
+file tabulations.
 
-Also included in this release are two documents:
-* TODO [2010 DEMONSTRATION DATA PRODUCTS DISCLOSURE AVOIDANCE SYSTEM
-DESIGN SPECIFICATION v1.4.1](doc/2010-Demonstration-Data-Products-Disclosure-Avoidance-System-Design-Specification%20FINAL.pdf)
-* TODO [Census TopDown Algorithm: Differentially Private Data, Incremental Schemas, and Consistency with Public Knowledge](doc/20191020_1843_Consistency_for_Large_Scale_Differentially_Private_Histograms.pdf)
-
-We thank you for taking the time to review this demonstration release of the US Census Bureau's Disclosure Avoidance System. We appreciate any feedback you would like to provide us; please post any questions that you may have in the [GitHub issues section](https://github.com/uscensusbureau/census2020-das-2010ddp/issues).
+Documentation of the DAS implementation can be found in the
+[wiki](https://github.com/uscensusbureau/DAS_2020_Redistricting_Production_Code/wiki)
+associated with this repostitory. In addition, papers describing the
+underlying methods and mathematics will be added to this repository as
+they are released.
