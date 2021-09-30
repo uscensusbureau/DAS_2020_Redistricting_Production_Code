@@ -23,7 +23,7 @@ Census Edited File (CEF) produced by the enumeration of the 2020 Census into a
 Microdata Detail File (MDF) that was then used to create the summary
 file tabulations for the redistricting data release.
 
-Documentation of the DAS implementation can be found in the
+Technical documentation of the DAS implementation can be found in the
 [wiki](https://github.com/uscensusbureau/DAS_2020_Redistricting_Production_Code/wiki)
 associated with this repostitory. In addition, papers describing the
 underlying methods and mathematics will linked in the wiki and added to the doc folder in this repository as
