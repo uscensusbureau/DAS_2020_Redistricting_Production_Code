@@ -28,10 +28,59 @@ Our Aspirational Goals
 ## Formatting code
 * Tabs should be expanded to spaces and not be embedded in programs. See https://www.jwz.org/doc/tabs-vs-spaces.html for details.
 * Python code should be indented by 4 spaces.
-* Python 3.6.
+* We'll use **two** blank lines to separate *class definitions* and *top-level functions* (i.e. functions at indentation level zero)
+* *Functions defined within classes* will be surrounded by **one** blank line
+* Additional blank lines may be used to demonstrate *groupings of functions*
+
+## Naming Conventions
+* **Modules** should be named using lowercase letters. Try to keep module names brief. Use underscores if needed for readability/clarity
+* **Classes** should be named using CapitalCase (e.g. ```class ClassName()```)
+* **Functions** should be named using camelCase (e.g. ```def toCamelCase(some_string)```)
+* **Variables** should be named using lowercase_letters_with_underscores (e.g. ```some_int = 32```)
+* **Constants** should be named using ALL_CAPS_WITH_UNDERSCORES (e.g. ```NUM_OF_CORES = 16```)
+* Always use the same casing for abbreviations (e.g. ```MyDASClass, DASClass, myDASFunction, dasFunction```)
+
+## String Values in `consts.py`
+* String values that need to be in multiple places and must always be exactly the same should be declared in a single python file (e.g. `consts.py`) and should be imported into the module where they are needed. This avoids typos on the string values.
 
 ## Using Python Modules
 * Explain what modules are used and why.
+* Place all imports after any module comments/docstrings and before module globals and constants (whenever possible)
+* ***Avoid*** wildcard imports (i.e. ```from module import *```)
+* Module abbreviations are allowed, but should be consistently used by all team members
+    * Some standard abbreviations are `import numpy as np` and `import matplotlib.pyplot as plt`
+
+
+## Type-Checking
+To check the type of a variable, use `isinstance(variable_name, type)`.
+Some examples:
+```python
+def isList(x):
+   return isinstance(x, list)
+
+if isinstance(x, dict):
+   y = list(x.items())
+
+y = isinstance(x, int)
+```
+
+## Method/Function Chaining
+The standard is to wrap the function calls in parentheses, making the chain more readable
+
+Some guidelines:
+* Double-indent the first line of the method chain and align all dots/function calls
+* Single-indent the closing brace
+
+For example,
+```Python
+from operator import add
+counts_of_evens_and_odds = (        
+        sc.parallelize([(str(i%2), i) for i in range(11)])
+          .mapValues(lambda x: 1)
+          .reduceByKey(add)
+          .collect()
+    )
+```
 
 ## Static Code Analysis
 * test with pylint
