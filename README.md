@@ -26,5 +26,5 @@ file tabulations for the redistricting data release.
 Technical documentation of the DAS implementation can be found in the
 [wiki](https://github.com/uscensusbureau/DAS_2020_Redistricting_Production_Code/wiki)
 associated with this repostitory. In addition, papers describing the
-underlying methods and mathematics will linked in the wiki and added to the doc folder in this repository as
+underlying methods and mathematics will be linked in the wiki and added to the doc folder in this repository as
 they are released.
